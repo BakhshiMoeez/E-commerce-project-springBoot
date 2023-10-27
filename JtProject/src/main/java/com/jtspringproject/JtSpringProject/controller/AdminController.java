@@ -106,7 +106,8 @@ public class AdminController {
 			return mView;
 		}
 	}
-	@RequestMapping(value = "categories",method = RequestMethod.POST)
+	
+	@PostMapping("/categories/categoryname")
 	public String addCategory(@RequestParam("categoryname") String category_name)
 	{
 		System.out.println(category_name);
